@@ -1,10 +1,21 @@
 /* General body styling */
+
+.questionTwo, 
+.questionThree,
+.questionFour, 
+.resultScreen
+{
+   display:none;
+}
+
+
 body {
     font-family: 'Oswald', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
     padding: 20px;
+    background-image:"https://png.pngtree.com/background/20230519/original/pngtree-many-different-sports-balls-laying-down-on-the-ground-picture-image_2652605.jpg";
 }
 
 /* Title section styling */
@@ -14,7 +25,11 @@ body {
 }
 
 /* Questions section styling */
-.questions {
+.questionOne, 
+.questionTwo, 
+.questionThree,
+.questionFour,
+.resultScreen {
     background-color: #fff;
     margin: 20px;
     padding: 20px;
@@ -22,11 +37,19 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.questions h4 {
+.questionOne h4, 
+.questionTwo h4, 
+.questionThree h4,
+.questionFour h4, 
+.resultScreen h4{
     color: #666;
 }
 
-.questions img {
+.questionOne img, 
+.questionTwo img, 
+.questionThree img,
+.questionFour img, 
+.resultScreen img{
     width: 100%; /* Make images responsive */
     height: auto;
     border-radius: 8px;
@@ -34,11 +57,71 @@ body {
 }
 
 /* Result section styling */
-.result {
+/*.result {
     background-color: #e2e2e2;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
     font-size: 1.2em;
+}*/
+
+.title h2{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:white;
+}
+
+button{
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #6691c0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    justify-content: flex-end;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+button:active{
+    background-color: blue;
+  }
+
+img{
+    max-width: 75%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hiddenValue1,
+.hiddenValue2,
+.hiddenValue3,
+.hiddenValue4,
+.hiddenValue5,
+.hiddenValue6{
+    color: #f4f4f4;
+}
+
+.resultScreen{
+    font-family: 'Oswald', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
